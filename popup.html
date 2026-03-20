@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Auto-Skip</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="icons/icon128.png" alt="Logo" class="logo">
+            <h1>Netflix Auto-Skip</h1>
+        </header>
+        
+        <main>
+            <div class="setting-item">
+                <div class="info">
+                    <span class="label">自動跳過片頭</span>
+                    <span class="description">當「跳過片頭」出現時自動點選</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="skip-intro-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+
+            <div class="setting-item" style="margin-top: 12px;">
+                <div class="info">
+                    <span class="label">自動播放下一集</span>
+                    <span class="description">當集末出現「下一集」時自動點選</span>
+                </div>
+                <label class="switch">
+                    <input type="checkbox" id="next-episode-toggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </main>
+
+        <footer>
+            <p id="status-text">目前狀態：載入中...</p>
+        </footer>
+    </div>
+    <script src="popup.js"></script>
+</body>
+</html>
